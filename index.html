@@ -143,6 +143,30 @@
 			</div>
 		</div>
 
+		<!-- Projects -->
+		<div id="software" class="container">
+			<h3>Projects</h3>
+			<div data-bind="foreach: projects">
+				<div class="row profile-item">
+					<div class="col-xs-12">
+						<!-- ko if: $data.url -->
+						<a data-bind="attr: { href: url}" target="_blank"><h4 data-bind="text: title"></h4></a>
+						<!-- /ko -->
+						<!-- ko ifnot: $data.url -->
+						<h4 data-bind="text: title"></h4>
+						<!-- /ko -->
+
+						<p data-bind="text: description"></p>
+						<div class="badges">
+							<!-- ko if: $data.code -->
+							<a data-bind="attr: { href: code}" target="_blank"><span class="badge"><span class="octicon octicon-mark-github profile-badge"></span></span></a>
+							<!-- /ko -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div id="industry" class="container ">
 			<h3>Industry</h3>
 			<div data-bind="foreach: industry">
@@ -172,29 +196,6 @@
 		</div>
 
 
-		<!-- Projects -->
-		<div id="software" class="container">
-			<h3>Projects</h3>
-			<div data-bind="foreach: projects">
-				<div class="row profile-item">
-					<div class="col-xs-12">
-						<!-- ko if: $data.url -->
-						<a data-bind="attr: { href: url}" target="_blank"><h4 data-bind="text: title"></h4></a>
-						<!-- /ko -->
-						<!-- ko ifnot: $data.url -->
-						<h4 data-bind="text: title"></h4>
-						<!-- /ko -->
-
-						<p data-bind="text: description"></p>
-						<div class="badges">
-							<!-- ko if: $data.code -->
-							<a data-bind="attr: { href: code}" target="_blank"><span class="badge"><span class="octicon octicon-mark-github profile-badge"></span></span></a>
-							<!-- /ko -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		
 		<!-- The navigation -->
 		<div class="kc_fab_wrapper" ></div>
