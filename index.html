@@ -56,27 +56,27 @@
 
 
 		<!-- ko if: announce -->
-		<div class="container text-center">
-			<h3>Announcements</h3>
-			<div id="myCarousel" class="jumbotron carousel slide text-center" data-ride="carousel">
-				  <ol class="carousel-indicators" data-bind="foreach: announce">
-					  <li data-target="#myCarousel" class="stub" data-bind="attr: {'data-slide-to': $index}, css: {'active': $index() == 0}" ></li>
-				  </ol>
-				    <div class="carousel-inner" data-bind="foreach: announce" role="listbox">
-						<div class="item" data-bind="css: {'active': $index() == 0}">
-							<h4 data-bind="html: description"></h4> 
-						</div>
-					</div>
-				  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				  </a>
-				  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				  </a>
-			</div>
-		</div>
+		<!-- <div class="container text-center"> -->
+		<!-- 	<h3>Announcements</h3> -->
+		<!-- 	<div id="myCarousel" class="jumbotron carousel slide text-center" data-ride="carousel"> -->
+		<!-- 		  <ol class="carousel-indicators" data-bind="foreach: announce"> -->
+		<!-- 			  <li data-target="#myCarousel" class="stub" data-bind="attr: {'data-slide-to': $index}, css: {'active': $index() == 0}" ></li> -->
+		<!-- 		  </ol> -->
+		<!-- 		    <div class="carousel-inner" data-bind="foreach: announce" role="listbox"> -->
+		<!-- 				<div class="item" data-bind="css: {'active': $index() == 0}"> -->
+		<!-- 					<h4 data-bind="html: description"></h4>  -->
+		<!-- 				</div> -->
+		<!-- 			</div> -->
+		<!-- 		  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> -->
+		<!-- 			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+		<!-- 			<span class="sr-only">Previous</span> -->
+		<!-- 		  </a> -->
+		<!-- 		  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> -->
+		<!-- 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+		<!-- 			<span class="sr-only">Next</span> -->
+		<!-- 		  </a> -->
+		<!-- 	</div> -->
+		<!-- </div> -->
 		<!-- /ko -->
 
 		<!-- Publications -->
